@@ -25,7 +25,7 @@ use tokio_util::codec::{Framed, LengthDelimitedCodec};
 
 use crate::stream_id::{Id, StreamId};
 
-/// Tari comms canonical framing
+/// Tari comms canonical framing - bộ khung kinh điển (chuẩn hóa) của Tari communications
 pub type CanonicalFraming<T> = Framed<T, LengthDelimitedCodec>;
 
 /// Create a length-delimited frame around the given stream reader/writer with the given maximum frame length.
